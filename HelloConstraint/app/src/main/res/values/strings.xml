@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hello Constraint</string>
+    <string name="btn_toast">Toast</string>
+    <string name="btn_count">Count</string>
+    <string name="btn_zero">Zero</string>
+    <string name="tv_count_initial_value">0</string>
+    <string name="toast_message">Hello Toast!</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvArticle_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_10dp"
+        android:text="@string/tvArticle_heading"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvArticle_heading">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvArticle_subheading"
+                android:layout_width="@dimen/width100dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10dp"
+                android:text="@string/tvArticle_subheading"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+            <TextView
+                android:id="@+id/tvArticle_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra_5sp"
+                android:text="@string/tvArticle_context" />
+
+            <Button
+                android:id="@+id/btnAddComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAddComment"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
