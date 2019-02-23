@@ -27,6 +27,15 @@ class MainActivity : AppCompatActivity() {
 
         Log.d(LOG_TAG, "******---------******")
         Log.d(LOG_TAG, "OnCreate")
+
+        //Restore the state
+        if(savedInstanceState != null) {
+            if(savedInstanceState.getBoolean("reply_visible")) {
+                tvTextReplyTextHeader.visibility = View.VISIBLE
+                tvTextReply.text = savedInstanceState.getString("reply_text")
+                tvTextReply.visibility = View.VISIBLE
+            }
+        }
     }
 
     fun launchSecondActivity(view: View) {
@@ -84,4 +93,22 @@ class MainActivity : AppCompatActivity() {
         Log.d(LOG_TAG, "OnDestroy")
     }
 
+
+    //onPause ==> onStop
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+
+        if (outState != null) {
+            if (tvTextReplyTextHeader.visibility == View.VISIBLE) {
+                outState.putBoolean("reply_visible", true)
+                outState.putString("reply_text", tvTextReply.text.toString())
+            }
+        }
+    }
+
+    fun goToShopping(view: View) {
+        var intent:Intent = Intent()
+        intent.setClass(this, ShoppingActivity::class.java)
+        startActivity(intent)
+    }
 }
