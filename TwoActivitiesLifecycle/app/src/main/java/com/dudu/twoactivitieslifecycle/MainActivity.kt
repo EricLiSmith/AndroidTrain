@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun launchSecondActivity(view: View) {
+    fun launchSecondActivity(@Suppress("UNUSED_PARAMETER")view: View) {
         Log.d(LOG_TAG, "Button clicked!")
 
         val message: String = etData.text.toString()
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
         if (requestCode == TEXT_REQUEST) {
             if (resultCode == Activity.RESULT_OK && data != null){
-                var replyMsg:String = data.getStringExtra(EXTRA_MESSAGE_SECONDACTIVITY)
+                val replyMsg:String = data.getStringExtra(EXTRA_MESSAGE_SECONDACTIVITY)
                 tvTextReplyTextHeader.visibility = View.VISIBLE
                 tvTextReply.visibility = View.VISIBLE
                 tvTextReply.text = replyMsg
@@ -106,9 +106,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun goToShopping(view: View) {
-        var intent:Intent = Intent()
+    fun goToShopping(@Suppress("UNUSED_PARAMETER")view: View) {
+        val intent = Intent()
         intent.setClass(this, ShoppingActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun goToTestSaveInstance(@Suppress("UNUSED_PARAMETER")view:View){
+        val intent = Intent()
+        intent.setClass(this, TestSaveInstanceStateActivity::class.java)
         startActivity(intent)
     }
 }

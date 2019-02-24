@@ -63,5 +63,8 @@ Just for today I will have a quiet half hour all by myself and relax. During thi
     <string name="btnBanana">Banana</string>
     <string name="btnRollCookie">RollCookie</string>
     <string name="btnCheckItem">Check Item</string>
+    <string name="btnCount">Count</string>
+    <string name="tvCount">0</string>
+    <string name="btnTestSaveInstance">Test Save Instance</string>
 
 </resources>
