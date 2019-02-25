@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ImplicitIntents</string>
+    <string name="etWebURL">http://developer.android.com</string>
+    <string name="etMapLocation">Golden Gate Bridge</string>
+    <string name="btnWebURL">OPEN WEBSITE</string>
+    <string name="btnMapLocation">OPEN LOCATION</string>
+    <string name="etShareText">T was brillig and the slithy toves</string>
+    <string name="btnShareText">SHARE THIS TEXT</string>
+</resources>
