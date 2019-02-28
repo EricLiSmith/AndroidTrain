@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <string name="btnItem">Item</string>
+    <string name="tv1">Apple</string>
+    <string name="tv2">Rice</string>
+    <string name="tv3">Cheese</string>
+    <string name="tv4">Banana</string>
+    <string name="tv5">RollCookie</string>
+    <string name="btnApple">Apple</string>
+    <string name="btnRice">Rice</string>
+    <string name="btnCheese">Cheese</string>
+    <string name="btnBanana">Banana</string>
+    <string name="btnRollCookie">RollCookie</string>
+    <string name="btnCheckItem">Check Item</string>
+    <string name="btnFind">Find</string>
+    <string name="etStoreName">Key Store Name to find location</string>
+</resources>
