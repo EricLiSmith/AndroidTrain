@@ -6,4 +6,5 @@
     <string name="btnMapLocation">OPEN LOCATION</string>
     <string name="etShareText">T was brillig and the slithy toves</string>
     <string name="btnShareText">SHARE THIS TEXT</string>
+    <string name="btnCamera">ShowCamera</string>
 </resources>
