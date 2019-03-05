@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimpleCalc</string>
+    <string name="etNum1">Key in Number</string>
+    <string name="etNum2">Key in Number</string>
+    <string name="btnPlus">PLUS</string>
+    <string name="btnSub">SUB</string>
+    <string name="btnDiv">DIV</string>
+    <string name="tvNumResult">0</string>
+</resources>
