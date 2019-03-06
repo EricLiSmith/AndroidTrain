@@ -131,7 +131,12 @@ public class MainActivity extends Activity {
      */
     private static Double getOperand(EditText operandEditText) {
         String operandText = getOperandText(operandEditText);
-        return Double.valueOf(operandText);
+        if (operandText.isEmpty()) {
+            return 0.0;
+        } else {
+            return Double.valueOf(operandText);
+        }
+
     }
 
     /**
