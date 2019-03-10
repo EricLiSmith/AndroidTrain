@@ -47,6 +47,11 @@ class MainActivity : AppCompatActivity() {
         showNumResult()
     }
 
+    fun toPowNum(@Suppress("UNUSED_PARAMETER")view:View) {
+        iNumTotal = Math.pow(editViewToNum(etNum1).toDouble(), editViewToNum(etNum2).toDouble()).toInt()
+        showNumResult()
+    }
+
     private fun editViewToNum(et:EditText) = et.text.toString().toInt()
     private fun showNumResult(){
         tvNumResult.text = iNumTotal.toString()

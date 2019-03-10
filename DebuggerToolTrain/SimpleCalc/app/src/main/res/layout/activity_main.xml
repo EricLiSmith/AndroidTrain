@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright 2018 Google Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,29 +14,29 @@
   limitations under the License.
   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:paddingBottom="@dimen/activity_vertical_margin"
-              android:paddingLeft="@dimen/activity_horizontal_margin"
-              android:paddingRight="@dimen/activity_horizontal_margin"
-              android:paddingTop="@dimen/activity_vertical_margin"
-              tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/operand_one_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/type_operand_one_hint"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/operand_two_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/type_operand_two_hint"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -48,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onAdd"
-            android:text="@string/add_operation_text"/>
+            android:text="@string/add_operation_text" />
 
         <Button
             android:id="@+id/operation_sub_btn"
@@ -57,7 +56,7 @@
             android:layout_toEndOf="@id/operation_add_btn"
             android:layout_toRightOf="@id/operation_add_btn"
             android:onClick="onSub"
-            android:text="@string/sub_operation_text"/>
+            android:text="@string/sub_operation_text" />
 
         <Button
             android:id="@+id/operation_div_btn"
@@ -65,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/operation_add_btn"
             android:onClick="onDiv"
-            android:text="@string/div_operation_text"/>
+            android:text="@string/div_operation_text" />
 
         <Button
             android:id="@+id/operation_mul_btn"
@@ -75,7 +74,15 @@
             android:layout_toEndOf="@id/operation_add_btn"
             android:layout_toRightOf="@id/operation_add_btn"
             android:onClick="onMul"
-            android:text="@string/mul_operation_text"/>
+            android:text="@string/mul_operation_text" />
+
+        <Button
+            android:id="@+id/btnPow"
+            android:onClick="onPow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/operation_sub_btn"
+            android:text="@string/btnPow" />
 
     </RelativeLayout>
 
@@ -83,6 +90,6 @@
         android:id="@+id/operation_result_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
 
 </LinearLayout>

@@ -6,4 +6,5 @@
     <string name="btnSub">SUB</string>
     <string name="btnDiv">DIV</string>
     <string name="tvNumResult">0</string>
+    <string name="btnPow">Pow</string>
 </resources>

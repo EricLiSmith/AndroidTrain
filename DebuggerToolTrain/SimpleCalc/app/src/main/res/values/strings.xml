@@ -39,5 +39,6 @@
 
     <!-- Message for textview in case of errors  -->
     <string name="computationError">Error</string>
+    <string name="btnPow">POW</string>
 
 </resources>
