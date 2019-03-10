@@ -44,6 +44,11 @@ public class Calculator {
      * Divide operation
      */
     public double div(double firstOperand, double secondOperand) {
+
+        if (secondOperand == 0) {
+            throw new IllegalArgumentException("不能為零");
+        }
+
         return firstOperand / secondOperand;
     }
 

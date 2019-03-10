@@ -32,8 +32,9 @@ import static org.junit.Assert.assertThat;
 /**
  * JUnit4 unit tests for the calculator logic. These are local unit tests; no device needed
  */
-@RunWith(JUnit4.class)
-@SmallTest
+@RunWith(JUnit4.class) // annotation tells the test runner to run tests in this class
+// @SmallTest, @MediumTest, and @LargeTest annotations are conventions that make it easier to bundle similar groups of tests
+@SmallTest //@SmallTest annotation indicates all the tests in a class are unit tests that have no dependencies and run in milliseconds.
 public class CalculatorTest {
 
     private Calculator mCalculator;
@@ -97,10 +98,16 @@ public class CalculatorTest {
         assertThat(resultAdd, is(equalTo(0.6666666666666666d)));
     }
 
-    @Test
-    public void divTwoNumbersZero() {
-        double resultAdd = mCalculator.div(2d, 0d);
-        assertThat(resultAdd, is(equalTo(Double.POSITIVE_INFINITY)));
+//    @Test
+//    public void divTwoNumbersZero() {
+//        double resultAdd = mCalculator.div(2d, 0d);
+//        assertThat(resultAdd, is(equalTo(Double.POSITIVE_INFINITY)));
+//    }
+
+
+    @Test(expected = IllegalArgumentException.class)
+    public void divByZeroThrows() {
+        mCalculator.div(2d, 0d);
     }
 
 }
