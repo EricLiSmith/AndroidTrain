@@ -22,7 +22,9 @@ package com.example.android.SimpleCalc;
 public class Calculator {
 
     // Available operations
-    public enum Operator {ADD, SUB, DIV, MUL}
+    public enum Operator {
+        ADD, SUB, DIV, MUL
+    }
 
     /**
      * Addition operation

@@ -131,11 +131,11 @@ public class MainActivity extends Activity {
      */
     private static Double getOperand(EditText operandEditText) {
         String operandText = getOperandText(operandEditText);
-        if (operandText.isEmpty()) {
-            return 0.0;
-        } else {
+//        if (operandText.isEmpty()) {
+//            return 0.0;
+//        } else {
             return Double.valueOf(operandText);
-        }
+//        }
 
     }
 

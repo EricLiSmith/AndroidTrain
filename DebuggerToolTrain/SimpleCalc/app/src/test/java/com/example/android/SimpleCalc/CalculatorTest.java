@@ -18,6 +18,8 @@ package com.example.android.SimpleCalc;
 
 import android.test.suitebuilder.annotation.SmallTest;
 
+
+import org.hamcrest.number.IsCloseTo;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -53,6 +55,52 @@ public class CalculatorTest {
         assertThat(resultAdd, is(equalTo(2d)));
     }
 
+    @Test
+    public void addTwoNumbersNegative() {
+        double resultAdd = mCalculator.add(-1d, 2d);
+        assertThat(resultAdd, is(equalTo(1d)));
+    }
 
+    @Test
+    public void addTwoNumbersFloats() {
+        double resultAdd = mCalculator.add(1.111f, 1.111d);
+        assertThat(resultAdd, is(IsCloseTo.closeTo(2.222, 0.01)));
+    }
+
+    @Test
+    public void subTwoNumbers() {
+        double resultAdd = mCalculator.sub(1d, 1d);
+        assertThat(resultAdd, is(equalTo(0d)));
+    }
+
+    @Test
+    public void subWorksWithNegativeResults() {
+        double resultAdd = mCalculator.sub(-1d, 2d);
+        assertThat(resultAdd, is(equalTo(-3d)));
+    }
+
+    @Test
+    public void mulTwoNumbers() {
+        double resultAdd = mCalculator.mul(2d, 3d);
+        assertThat(resultAdd, is(equalTo(6d)));
+    }
+
+    @Test
+    public void mulTwoNumbersZero() {
+        double resultAdd = mCalculator.mul(2d, 0d);
+        assertThat(resultAdd, is(equalTo(0d)));
+    }
+
+    @Test
+    public void divTwoNumbers() {
+        double resultAdd = mCalculator.div(2d, 3d);
+        assertThat(resultAdd, is(equalTo(0.6666666666666666d)));
+    }
+
+    @Test
+    public void divTwoNumbersZero() {
+        double resultAdd = mCalculator.div(2d, 0d);
+        assertThat(resultAdd, is(equalTo(Double.POSITIVE_INFINITY)));
+    }
 
 }
