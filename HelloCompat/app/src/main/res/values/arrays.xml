@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="TvTxColorList">
+        <item>@color/Black</item>
+        <item>@color/Red</item>
+        <item>@color/Lime</item>
+        <item>@color/Blue</item>
+        <item>@color/Yellow</item>
+        <item>@color/Cyan</item>
+        <item>@color/Magenta</item>
+        <item>@color/Silver</item>
+        <item>@color/Gray</item>
+        <item>@color/Maroon</item>
+        <item>@color/Olive</item>
+        <item>@color/Green</item>
+    </array>
+
+</resources>
