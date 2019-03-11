@@ -2,4 +2,5 @@
     <string name="app_name">HelloCompat</string>
     <string name="tvMsg">Hello World!</string>
     <string name="btnChgColor">Change Color</string>
+    <string name="btnOtherMethod">Another Write Method</string>
 </resources>
