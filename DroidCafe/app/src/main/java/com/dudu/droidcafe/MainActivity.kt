@@ -2,7 +2,6 @@ package com.dudu.droidcafe
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
@@ -11,7 +10,10 @@ import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main.*
 
+const val EXTRA_MESSAGE_ORDER = "MainActivity"
+
 class MainActivity : AppCompatActivity() {
+    private var orderItem = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,10 +56,12 @@ class MainActivity : AppCompatActivity() {
 
     fun togoOrder(@Suppress("UNUSED_PARAMETER")view :View){
         val intent = Intent().setClass(this, OrderActivity::class.java)
+        intent.putExtra(EXTRA_MESSAGE_ORDER, orderItem)
         startActivity(intent)
     }
 
     private fun displayToast(msg: String) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        orderItem = msg
     }
 }
