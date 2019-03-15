@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/tvOrderItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp24"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp24"
+        android:layout_marginEnd="@dimen/dp24"
+        android:layout_marginRight="@dimen/dp24"
+        android:text="@string/tvOrderItem"
+        android:textSize="@dimen/sp24"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:text="@string/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderItem" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:hint="@string/etName"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tvName"
+        app:layout_constraintStart_toEndOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderItem" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:text="@string/tvAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:hint="@string/etAddress"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:hint="@string/tvPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:hint="@string/etPhone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPhone"
+        app:layout_constraintStart_toEndOf="@+id/tvPhone"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:hint="@string/tvNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:hint="@string/etNote"
+        android:inputType="textMultiLine|textCapSentences"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNote"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <TextView
+        android:id="@+id/tvChooseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp48"
+        android:text="@string/tvChooseTitle"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNote" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChooseTitle">
+
+        <RadioButton
+            android:id="@+id/rBtnSmoeDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioBtnClicked"
+            android:text="@string/rBtnSmoeDay" />
+
+        <RadioButton
+            android:id="@+id/rBtnNextDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioBtnClicked"
+            android:text="@string/rBtnNextDay" />
+
+        <RadioButton
+            android:id="@+id/rBtnPickUp"
+            android:onClick="onRadioBtnClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rBtnPickUp" />
+
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>

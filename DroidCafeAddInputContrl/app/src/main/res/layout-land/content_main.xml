@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:text="@string/tvIntro"
+        android:textSize="@dimen/sp24"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDonut"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/ContentDes_ivDonut"
+        android:onClick="showDountOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntro"
+        app:srcCompat="@drawable/donut_circle" />
+
+    <ImageView
+        android:id="@+id/ivIceCream"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/ContentDes_ivIceCream"
+        android:onClick="showIceCreamOrder"
+        app:layout_constraintStart_toEndOf="@+id/ivDonut"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntro"
+        app:srcCompat="@drawable/icecream_circle" />
+
+    <ImageView
+        android:id="@+id/ivFroyo"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/ContentDes_ivFroyo"
+        android:onClick="showFroyoOrder"
+        app:layout_constraintStart_toEndOf="@+id/ivIceCream"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntro"
+        app:srcCompat="@drawable/froyo_circle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:text="@string/ContentDes_ivDonut"
+        app:layout_constraintEnd_toEndOf="@+id/ivDonut"
+        app:layout_constraintStart_toStartOf="@+id/ivDonut"
+        app:layout_constraintTop_toBottomOf="@+id/ivDonut" />" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:text="@string/ContentDes_ivIceCream"
+        app:layout_constraintEnd_toEndOf="@+id/ivIceCream"
+        app:layout_constraintStart_toStartOf="@+id/ivIceCream"
+        app:layout_constraintTop_toBottomOf="@+id/ivIceCream" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:layout_marginEnd="@dimen/dp24"
+        android:layout_marginRight="@dimen/dp24"
+        android:text="@string/ContentDes_ivFroyo"
+        app:layout_constraintEnd_toEndOf="@+id/ivFroyo"
+        app:layout_constraintStart_toStartOf="@+id/ivFroyo"
+        app:layout_constraintTop_toBottomOf="@+id/ivFroyo" />
+
+</android.support.constraint.ConstraintLayout>
