@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PassToPhone</string>
+    <string name="etPhoneNumber">PhoneNumber</string>
+</resources>
