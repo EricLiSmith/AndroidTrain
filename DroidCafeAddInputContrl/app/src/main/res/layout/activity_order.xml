@@ -86,7 +86,7 @@
 
     <EditText
         android:id="@+id/etPhone"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp16"
         android:layout_marginLeft="@dimen/dp16"
@@ -161,12 +161,25 @@
 
         <RadioButton
             android:id="@+id/rBtnPickUp"
-            android:onClick="onRadioBtnClicked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onRadioBtnClicked"
             android:text="@string/rBtnPickUp" />
 
     </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spPhoneType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etPhone"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
 
 
 </android.support.constraint.ConstraintLayout>

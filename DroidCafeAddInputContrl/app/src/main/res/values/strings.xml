@@ -22,4 +22,11 @@
     <string name="rBtnSmoeDay">Same day messenger service</string>
     <string name="rBtnNextDay">Next day ground delivery</string>
     <string name="rBtnPickUp">Pick up</string>
+
+    <string-array name="phone_type">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
 </resources>
