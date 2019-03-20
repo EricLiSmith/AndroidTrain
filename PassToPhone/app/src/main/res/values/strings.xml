@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">PassToPhone</string>
     <string name="etPhoneNumber">PhoneNumber</string>
+    <string name="cb1">Chocolate syrup</string>
+    <string name="cb2">Sprinkles</string>
+    <string name="cb3">Crushed nuts</string>
+    <string name="cb4">Cherries</string>
+    <string name="cb5">Orio cookie crumbles</string>
+    <string name="btnShowToast">Show Toast</string>
 </resources>
