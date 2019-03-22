@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.dudu.droidcafeaddinputcontrl.OrderActivity"></activity>
+        <activity android:name=".ContextActivity"></activity>
+        <activity android:name=".OrderActivity" />
         <activity
-            android:name="com.dudu.droidcafeaddinputcontrl.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

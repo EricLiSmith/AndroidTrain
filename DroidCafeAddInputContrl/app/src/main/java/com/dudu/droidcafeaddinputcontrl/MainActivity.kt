@@ -37,7 +37,27 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_order -> {
+//                displayToast(getString(R.string.action_order_message))
+                openOrder()
+                true
+            }
+            R.id.action_status -> {
+                displayToast(getString(R.string.action_status_message))
+                true
+            }
+            R.id.action_favorites -> {
+                displayToast(getString(R.string.action_favorites_message))
+                true
+            }
+            R.id.action_contact -> {
+                displayToast(getString(R.string.action_contact_message))
+                true
+            }
+            R.id.action_context -> {
+                startActivity(Intent(this, ContextActivity::class.java))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -55,6 +75,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun togoOrder(@Suppress("UNUSED_PARAMETER")view :View){
+        openOrder()
+    }
+
+    private fun openOrder(){
         val intent = Intent().setClass(this, OrderActivity::class.java)
         intent.putExtra(EXTRA_MESSAGE_ORDER, orderItem)
         startActivity(intent)

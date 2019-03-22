@@ -22,6 +22,10 @@
     <string name="rBtnSmoeDay">Same day messenger service</string>
     <string name="rBtnNextDay">Next day ground delivery</string>
     <string name="rBtnPickUp">Pick up</string>
+    <string name="action_contact">Contact</string>
+    <string name="action_order">Order</string>
+    <string name="action_status">Status</string>
+    <string name="action_favorites">Favorites</string>
 
     <string-array name="phone_type">
         <item>Home</item>
@@ -29,4 +33,29 @@
         <item>Mobile</item>
         <item>Other</item>
     </string-array>
+
+    <string name="action_order_message">You selected Order.</string>
+    <string name="action_status_message">You selected Status.</string>
+    <string name="action_favorites_message">You selected Favorites.</string>
+    <string name="action_contact_message">You selected Contact.</string>
+    <string name="cmEdit">Edit</string>
+    <string name="cmShare">Share</string>
+    <string name="cmDelete">Delete</string>
+    <string name="ContentMenuEdit">Edit choice clicked.</string>
+    <string name="ContentMenuShare">Share choice clicked.</string>
+    <string name="ContentMenuDelete">Delete choice clicked.</string>
+    <string name="action_context">Context</string>
+
+    <string name="tvContent">
+        For a young person, going to a job interview can be expensive. You need nice clothes and a case or handbag to hold your resume and other documents.<br/>
+        對一名年輕人來說，去一趟工作面試很花錢。你得要有得體的服裝，和一個包包或手提包，裝你的履歷表與其他文件。<br/>
+        But if you live in New York, there’s help. The New York Public Library is making sure you dress to impress in all your interviews － as long as you don’t have any library card fines greater than $15.<br/>
+        但若你住在紐約，那就有救了。紐約公共圖書館能讓你在所有面試時穿著得體到令人印象深刻—只要你的借書卡的罰金不高於15美元。<br/>
+        The NYPL’s Riverside Library has rolled out a "Grow Up Work Fashion Library," which lends out neckties, handbags and briefcases to responsible patrons.<br/>
+        紐約公共圖書館河畔分館推出的「成長工作時尚圖書館」，對負責可靠的借書人出借領帶、手提包與公事包。<br/>
+        The goal is to help anyone with limited resources to get clothing and accessories for interviews, graduations and other "business-like occasions."<br/>
+        其目標在於協助任何資源有限者取得參加面試、畢業活動與其他「正式場合」所需要的服裝與配件。<br/>
+        The idea was born when Michelle Lee, a young adult librarian at the Riverside branch, was helping students prepare for college interviews and part-time jobs.<br/>
+        此一構想是河畔分館的年輕館員蜜雪兒．李，在協助學生們準備大學面試與應徵打工時應運而生。<br/>
+    </string>
 </resources>
