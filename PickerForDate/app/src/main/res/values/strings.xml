@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Picker For Date</string>
+    <string name="btnDate">Date</string>
+    <string name="tvWelcomeMsg">Hello World! Choose a date</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
