@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dialog For Alert</string>
+    <string name="btnAlertDialog">Alert</string>
+    <string name="tvWelcomeMsg">Hello World! Tap to test the alert</string>
+</resources>
