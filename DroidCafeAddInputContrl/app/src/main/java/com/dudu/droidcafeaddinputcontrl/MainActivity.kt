@@ -58,6 +58,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, ContextActivity::class.java))
                 true
             }
+            R.id.action_date -> {
+                showDatePicker()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -76,6 +80,15 @@ class MainActivity : AppCompatActivity() {
 
     fun togoOrder(@Suppress("UNUSED_PARAMETER")view :View){
         openOrder()
+    }
+
+    private fun showDatePicker(){
+        val datePickerFragment = DatePickerFragment()
+        datePickerFragment.show(supportFragmentManager, "DatePicker")
+    }
+
+    fun processDatePickerResult(year:Int, month:Int, day:Int){
+        displayToast("Date: $year / $month / $day")
     }
 
     private fun openOrder(){
