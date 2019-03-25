@@ -25,4 +25,16 @@ class MainActivity : AppCompatActivity() {
 
         Toast.makeText(this, "Date: $dateMsg", Toast.LENGTH_SHORT).show()
     }
+
+    fun showTimePicker(@Suppress("UNUSED_PARAMETER")view:View) {
+        val timeFragment = TimePickerFragment()
+        timeFragment.show(supportFragmentManager, "timePicker")
+    }
+
+    fun processTimePickerResult(hour:Int, minute:Int){
+        val hourStr = hour.toString()
+        val minuteStr = minute.toString()
+        val timeMsg = "$hourStr : $minuteStr"
+        Toast.makeText(this, "Time : $timeMsg", Toast.LENGTH_SHORT).show()
+    }
 }
