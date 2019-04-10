@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 
-class PagerAdapter(var fm:FragmentManager, var mNumOfTabs:Int): FragmentStatePagerAdapter(fm) {
+class PagerAdapter(private var fm:FragmentManager, private var mNumOfTabs:Int): FragmentStatePagerAdapter(fm) {
     override fun getItem(position: Int): Fragment? {
         //To change body of created functions use File | Settings | File Templates.
         return when(position) {
