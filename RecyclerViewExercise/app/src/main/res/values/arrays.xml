@@ -1,0 +1,61 @@
+<resources>
+    <string-array name="RecipeTitles">
+        <item>北海道湯咖哩</item>
+        <item>名古屋赤味噌鍋</item>
+        <item>豪華天丼</item>
+        <item>東京炸牛肉丸</item>
+        <item>泰式黃咖哩炸蝦</item>
+        <item>鮭魚三角飯糰</item>
+        <item>栗子雞肉丼飯</item>
+        <item>和風豆腐豬肉排</item>
+        <item>味噌雜糧饅頭</item>
+        <item>栗子地瓜燒肉</item>
+        <item>時蔬關東煮</item>
+        <item>韓式年糕香腸串</item>
+    </string-array>
+
+    <string-array name="RecipeDescs">
+        <item>湯咖哩來自於日本北海道一帶, 有別於一般傳統的咖哩飯, 質地不會這麼的濃稠。鮮嫩雞腿肉煎香, 搭配鮮蔬同柴魚高湯燒煮, 迷人咖哩風味...</item>
+        <item>湯頭甜鹹、口味較重最後還可以利用剩下的湯頭加入白飯、起司做成好吃的燉飯一鍋兩吃在家自製赤味噌也能享受辣的滋味喔</item>
+        <item>熱騰騰的白飯滿載著金黃色的炸物,撲鼻而香的天婦羅,包裹著薄脆的麵衣,吃起來完全不膩口,糖心蛋黃搭配Q彈的米飯醬汁,讓人欲罷不能的大口扒飯,華麗的豪華天丼,在家也能輕鬆享用</item>
+        <item>東京自由行, 天氣再冷, 也要跟著排隊的必吃美食- 炸牛肉丸, 外層炸至香酥, 內餡爆漿多汁, 實在令人回味! 自己動手作, 雖然size小一號, 但美味不減, 沾上特調的牛排醬~ 也是家中的人氣料理喔</item>
+        <item>香濃黃咖哩搭配上肥美的大蝦,充分融入充滿椰奶香氣的醬汁中,以麵包沾食亦可拌飯,讓人魂牽夢縈,吮指回味的美味</item>
+        <item>新手也能輕鬆製作的鮭魚飯糰,營養好吃又簡單~把表面稍微烤一下,微微的焦香讓飯糰更加美味呢!</item>
+        <item>好好吃的栗子不管是燉湯或是加入料理都非常好吃,也為丼飯增添了不同的風味唷</item>
+        <item>將豆腐加入絞肉裡混合做成肉排,不只能減低一些熱量,還能讓口感軟嫩,把湯汁吸飽飽唷</item>
+        <item>帶點日式風味的養生饅頭,而且隨著不同口味的味增,能賦予饅頭不同的日式風味唷</item>
+        <item>日式的經典料理"馬鈴薯燉肉"改成好吃的栗子和地瓜來燉煮,吃起來也更加清甜</item>
+        <item>冷冷的天氣來盤暖呼呼的關東煮,把常見的丸子竹輪改成健康的當季蔬菜,把湯汁燉的非常清甜唷</item>
+        <item>明洞是購物天堂也是美食天地. 在逛到累時, 來點街頭小吃「年糕香腸串」, 很不賴~ 這款肉食搭配澱粉補充一下能量, 吃完再接著逛~^^ 酥軟的年糕, 燙口的香腸, 醬料鹹甜鹹甜, 吃起來好過癮。</item>
+    </string-array>
+
+    <string-array name="RecipeDetails">
+        <item>Detail湯咖哩來自於日本北海道一帶, 有別於一般傳統的咖哩飯, 質地不會這麼的濃稠。鮮嫩雞腿肉煎香, 搭配鮮蔬同柴魚高湯燒煮, 迷人咖哩風味...</item>
+        <item>Detail湯頭甜鹹、口味較重最後還可以利用剩下的湯頭加入白飯、起司做成好吃的燉飯一鍋兩吃在家自製赤味噌也能享受辣的滋味喔</item>
+        <item>Detail熱騰騰的白飯滿載著金黃色的炸物,撲鼻而香的天婦羅,包裹著薄脆的麵衣,吃起來完全不膩口,糖心蛋黃搭配Q彈的米飯醬汁,讓人欲罷不能的大口扒飯,華麗的豪華天丼,在家也能輕鬆享用</item>
+        <item>Detail東京自由行, 天氣再冷, 也要跟著排隊的必吃美食- 炸牛肉丸, 外層炸至香酥, 內餡爆漿多汁, 實在令人回味! 自己動手作, 雖然size小一號, 但美味不減, 沾上特調的牛排醬~ 也是家中的人氣料理喔</item>
+        <item>Detail香濃黃咖哩搭配上肥美的大蝦,充分融入充滿椰奶香氣的醬汁中,以麵包沾食亦可拌飯,讓人魂牽夢縈,吮指回味的美味</item>
+        <item>Detail新手也能輕鬆製作的鮭魚飯糰,營養好吃又簡單~把表面稍微烤一下,微微的焦香讓飯糰更加美味呢!</item>
+        <item>Detail好好吃的栗子不管是燉湯或是加入料理都非常好吃,也為丼飯增添了不同的風味唷</item>
+        <item>Detail將豆腐加入絞肉裡混合做成肉排,不只能減低一些熱量,還能讓口感軟嫩,把湯汁吸飽飽唷</item>
+        <item>Detail帶點日式風味的養生饅頭,而且隨著不同口味的味增,能賦予饅頭不同的日式風味唷</item>
+        <item>Detail日式的經典料理"馬鈴薯燉肉"改成好吃的栗子和地瓜來燉煮,吃起來也更加清甜</item>
+        <item>Detail冷冷的天氣來盤暖呼呼的關東煮,把常見的丸子竹輪改成健康的當季蔬菜,把湯汁燉的非常清甜唷</item>
+        <item>Detail明洞是購物天堂也是美食天地. 在逛到累時, 來點街頭小吃「年糕香腸串」, 很不賴~ 這款肉食搭配澱粉補充一下能量, 吃完再接著逛~^^ 酥軟的年糕, 燙口的香腸, 醬料鹹甜鹹甜, 吃起來好過癮。</item>
+    </string-array>
+
+    <integer-array name="RecipeImgIds">
+        <item>@drawable/recipe_1</item>
+        <item>@drawable/recipe_2</item>
+        <item>@drawable/recipe_3</item>
+        <item>@drawable/recipe_4</item>
+        <item>@drawable/recipe_5</item>
+        <item>@drawable/recipe_6</item>
+        <item>@drawable/recipe_7</item>
+        <item>@drawable/recipe_8</item>
+        <item>@drawable/recipe_9</item>
+        <item>@drawable/recipe_10</item>
+        <item>@drawable/recipe_11</item>
+        <item>@drawable/recipe_12</item>
+    </integer-array>
+</resources>
