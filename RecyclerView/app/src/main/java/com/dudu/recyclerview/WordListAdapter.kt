@@ -8,9 +8,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import java.util.*
 
-class WordListAdapter(context:Context, wordList: LinkedList<String>) : RecyclerView.Adapter<WordListAdapter.WordViewHolder>() {
+class WordListAdapter(context: Context, wordList: LinkedList<String>) :
+    RecyclerView.Adapter<WordListAdapter.WordViewHolder>() {
     private val mWordList = wordList
-    private val mInflater:LayoutInflater = LayoutInflater.from(context)
+    private val mInflater: LayoutInflater = LayoutInflater.from(context)
 
     override fun getItemCount(): Int {
         return mWordList.size //To change body of created functions use File | Settings | File Templates.
@@ -30,7 +31,8 @@ class WordListAdapter(context:Context, wordList: LinkedList<String>) : RecyclerV
         return WordViewHolder(itemView, this)
     }
 
-    class WordViewHolder(itemView: View?, adapter:WordListAdapter) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+    class WordViewHolder(itemView: View?, adapter: WordListAdapter) : RecyclerView.ViewHolder(itemView),
+        View.OnClickListener {
         val wordItemView = itemView?.findViewById(R.id.tvWord) as TextView
         private val mAdapter = adapter
 
@@ -39,7 +41,7 @@ class WordListAdapter(context:Context, wordList: LinkedList<String>) : RecyclerV
         }
 
         override fun onClick(v: View?) {
-             //To change body of created functions use File | Settings | File Templates.
+            //To change body of created functions use File | Settings | File Templates.
             // Get the position of the item that was clicked.
             val mPosition = layoutPosition
             // Use that to access the affected item in mWordList.
