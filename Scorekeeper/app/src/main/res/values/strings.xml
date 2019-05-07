@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Scorekeeper</string>
+    <string name="Team1Title">Team 1</string>
+    <string name="tvTeam1Count">0</string>
+    <string name="imgBtnDecreaseTeam1">Team1扣分</string>
+    <string name="imgBtnIncreaseTeam1">Team1加分</string>
+    <string name="imgBtnDecreaseTeam2">Team2扣分</string>
+    <string name="imgBtnIncreaseTeam2">Team2加分</string>
+    <string name="tvTeam2Count">0</string>
+    <string name="Team2Title">Team 2</string>
+</resources>
